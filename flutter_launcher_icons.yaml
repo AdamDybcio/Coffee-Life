@@ -1,0 +1,6 @@
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_logos/CoffeeLife.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
