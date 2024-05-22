@@ -1,12 +1,12 @@
 flutter_native_splash:
-  color: "#FFFFFF"
-  color_dark: "#000000"
+  color: "#421d00"
+  color_dark: "#421d00"
   image: assets/app_logos/CoffeeLifeSplash.png
   image_dark: assets/app_logos/CoffeeLifeSplash.png
 
   android_12:
-    color: "#FFFFFF"
-    color_dark: "#000000"
+    color: "#421d00"
+    color_dark: "#421d00"
     image: assets/app_logos/CoffeeLifeSplash.png
     image_dark: assets/app_logos/CoffeeLifeSplash.png
 
