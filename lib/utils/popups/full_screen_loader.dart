@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../common/widgets/loaders/animation_loader.dart';
 import '../constants/colors.dart';
 import '../helpers/helper_functions.dart';
 
@@ -15,9 +16,10 @@ class FullScreenLoader {
           color: HelperFunctions.isDarkMode(Get.context!) ? AppColors.dark : AppColors.white,
           width: double.infinity,
           height: double.infinity,
-          child: const Column(
+          child: Column(
             children: [
-              //To be implemented
+              const SizedBox(height: 250),
+              AnimationLoaderWidget(text: text, animation: animation),
             ],
           ),
         ),

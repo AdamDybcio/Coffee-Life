@@ -32,13 +32,13 @@ class Loaders {
       title,
       message,
       isDismissible: true,
+      dismissDirection: DismissDirection.horizontal,
       shouldIconPulse: true,
-      colorText: AppColors.white,
-      backgroundColor: AppColors.success,
+      backgroundColor: Theme.of(Get.context!).snackBarTheme.backgroundColor,
       snackPosition: SnackPosition.BOTTOM,
       duration: Duration(seconds: duration),
       margin: const EdgeInsets.all(10),
-      icon: const FaIcon(FontAwesomeIcons.circleCheck, color: AppColors.white),
+      icon: const FaIcon(FontAwesomeIcons.circleCheck),
     );
   }
 
@@ -47,13 +47,13 @@ class Loaders {
       title,
       message,
       isDismissible: true,
+      dismissDirection: DismissDirection.horizontal,
       shouldIconPulse: true,
-      colorText: AppColors.white,
-      backgroundColor: AppColors.warning,
+      backgroundColor: Theme.of(Get.context!).snackBarTheme.backgroundColor,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(20),
-      icon: const FaIcon(FontAwesomeIcons.circleExclamation, color: AppColors.white),
+      icon: const FaIcon(FontAwesomeIcons.circleExclamation),
     );
   }
 
@@ -62,13 +62,13 @@ class Loaders {
       title,
       message,
       isDismissible: true,
+      dismissDirection: DismissDirection.horizontal,
       shouldIconPulse: true,
-      colorText: AppColors.white,
-      backgroundColor: AppColors.error,
+      backgroundColor: Theme.of(Get.context!).snackBarTheme.backgroundColor,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(20),
-      icon: const FaIcon(FontAwesomeIcons.circleExclamation, color: AppColors.white),
+      icon: const FaIcon(FontAwesomeIcons.circleExclamation),
     );
   }
 }
