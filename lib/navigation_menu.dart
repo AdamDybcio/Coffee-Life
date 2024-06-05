@@ -27,7 +27,8 @@ class NavigationMenu extends StatelessWidget {
             NavigationDestination(icon: FaIcon(FontAwesomeIcons.house), label: 'Home'),
             NavigationDestination(icon: FaIcon(FontAwesomeIcons.receipt), label: 'Recipes'),
             NavigationDestination(icon: FaIcon(FontAwesomeIcons.store), label: 'Store'),
-            NavigationDestination(icon: FaIcon(FontAwesomeIcons.meetup), label: 'Meet & Coffee'),
+            NavigationDestination(icon: FaIcon(FontAwesomeIcons.meetup), label: 'Meet&Coffee'),
+            NavigationDestination(icon: FaIcon(FontAwesomeIcons.solidUser), label: 'Profile'),
           ],
         ),
       ),
@@ -43,6 +44,7 @@ class NavigationController extends GetxController {
     const Scaffold(backgroundColor: Colors.orange),
     const Scaffold(backgroundColor: Colors.red),
     const Scaffold(backgroundColor: Colors.blue),
+    const Scaffold(backgroundColor: Colors.green),
     const SettingsScreen(),
   ];
 }

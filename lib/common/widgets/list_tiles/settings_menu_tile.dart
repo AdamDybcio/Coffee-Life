@@ -21,7 +21,7 @@ class SettingsMenuTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: FaIcon(icon, size: 28, color: AppColors.primary),
+      leading: FaIcon(icon, size: 28, color: AppColors.textSecondary),
       title: Text(title, style: Theme.of(context).textTheme.titleMedium),
       subtitle: Text(subTitle, style: Theme.of(context).textTheme.labelMedium),
       trailing: trailing,

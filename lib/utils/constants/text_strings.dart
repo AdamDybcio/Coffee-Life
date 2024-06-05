@@ -18,7 +18,7 @@ class TextStrings {
   static const String continueText = "Continue";
 
   //Authentication Forms
-  static const String firstName = "First Name";
+  static const String firstName = "Name";
   static const String email = "Email";
   static const String password = "Password";
   static const String newPassword = "New Password";

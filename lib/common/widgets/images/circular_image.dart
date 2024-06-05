@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../../utils/helpers/helper_functions.dart';
 import '../shimmers/shimmer.dart';
 
 class CircularImage extends StatelessWidget {
@@ -16,7 +15,7 @@ class CircularImage extends StatelessWidget {
     this.backgroundColor,
     this.width = 56,
     this.height = 56,
-    this.padding = Sizes.sm,
+    this.padding = Sizes.xs,
   });
 
   final BoxFit? fit;
@@ -33,7 +32,7 @@ class CircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: backgroundColor ?? (HelperFunctions.isDarkMode(context) ? AppColors.black : AppColors.white),
+        color: backgroundColor ?? AppColors.primary,
         borderRadius: BorderRadius.circular(100),
       ),
       child: ClipRRect(

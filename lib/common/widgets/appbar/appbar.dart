@@ -1,3 +1,5 @@
+import 'package:coffee_life/utils/constants/colors.dart';
+import 'package:coffee_life/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -22,12 +24,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = HelperFunctions.isDarkMode(context);
     return AppBar(
+      backgroundColor: Colors.transparent,
       automaticallyImplyLeading: false,
       leading: showBackArrow
-          ? IconButton(onPressed: () => Get.back(), icon: const FaIcon(FontAwesomeIcons.arrowLeft))
+          ? IconButton(onPressed: () => Get.back(), icon: FaIcon(FontAwesomeIcons.arrowLeft, color: dark ? AppColors.textSecondary : AppColors.black))
           : leadingIcon != null
-              ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+              ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon, color: dark ? AppColors.white : AppColors.black))
               : null,
       title: title,
       actions: actions,

@@ -7,7 +7,6 @@ import '../../../../../common/widgets/custom_shapes/containers/primary_header_co
 import '../../../../../common/widgets/list_tiles/settings_menu_tile.dart';
 import '../../../../../common/widgets/list_tiles/user_profile_tile.dart';
 import '../../../../../common/widgets/texts/section_heading.dart';
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../profile/profile.dart';
 
@@ -23,9 +22,7 @@ class SettingsScreen extends StatelessWidget {
             PrimaryHeaderContainer(
               child: Column(
                 children: [
-                  CustomAppBar(
-                    title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: AppColors.white)),
-                  ),
+                  CustomAppBar(title: Text('Account', style: Theme.of(context).textTheme.headlineMedium)),
                   UserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
                   const SizedBox(height: Sizes.spaceBtwSections),
                 ],
@@ -39,10 +36,7 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: Sizes.spaceBtwItems),
                   const SettingsMenuTile(icon: FontAwesomeIcons.bagShopping, title: 'My Cart', subTitle: 'Add, remove products and move to checkout'),
                   const SettingsMenuTile(icon: FontAwesomeIcons.bagShopping, title: 'My Orders', subTitle: 'In-progress and Completed Orders'),
-                  const SettingsMenuTile(icon: FontAwesomeIcons.buildingColumns, title: 'Bank Account', subTitle: 'Withdraw balance to registered bank account'),
-                  const SettingsMenuTile(icon: FontAwesomeIcons.percent, title: 'My Coupons', subTitle: 'List of all the discounted coupons'),
-                  const SettingsMenuTile(icon: FontAwesomeIcons.bell, title: 'Notifications', subTitle: 'Set any kind of notification message'),
-                  const SettingsMenuTile(icon: FontAwesomeIcons.userSecret, title: 'Account Privacy', subTitle: 'Manage data usage and connected accounts'),
+                  const SettingsMenuTile(icon: FontAwesomeIcons.solidBell, title: 'Notifications', subTitle: 'Set any kind of notification message'),
                   const SizedBox(height: Sizes.spaceBtwSections),
                   const SectionHeading(title: 'App Settings', showActionButton: false),
                   const SizedBox(height: Sizes.spaceBtwItems),
